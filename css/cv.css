@@ -1,0 +1,166 @@
+body {
+    color: #40514E;
+}
+
+body > div {
+    padding: 30px;
+}
+
+p, li {
+    font-family: 'Abel', sans-serif;
+}
+
+div.container-top h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4.375em;
+    margin-bottom: 0px;
+}
+
+div.container-top p {
+    font-size: 2em;
+}
+
+div.container-top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #7fcd91;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+div.container-top img.left-image {
+    align-self: flex-start;
+}
+
+div.container-top img.right-image {
+    align-self: flex-end;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.img-container img {
+    max-width: 30%;
+}
+
+.container-mid {
+    background-color: #f5eaea;
+}
+
+.container-mid img.profile {
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.container-mid div.profile {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.container-mid p {
+    margin-top: 0px;
+}
+
+.container-mid h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.container-mid > div:not(:last-of-type) {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #40514E;
+}
+
+.skill-row img {
+    flex: 0 1 25%;
+    max-width: 25%;
+}
+
+.skills-info {
+    flex: 0 1 70%;
+}
+
+.skill-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 25px 0px 10px;
+}
+
+.skill-row h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    flex: 0 1 100%;
+}
+
+.skill-row p {
+    font-size: 1.5em;
+}
+
+.skill-row ul {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.skill-row.frontend {
+    flex-flow: row-reverse wrap;
+    text-align: right;
+}
+
+.skill-row.frontend ul {
+    width: auto;
+    display: inline-block;
+    direction: rtl;
+    text-align: right;
+}
+
+.contact-me {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.contact-me h3 {
+    margin: 0px 0px 10px;
+}
+
+.btn {
+    align-self: center;
+    border-radius: 6px;
+    background-color: #7fcd91;
+    padding: 15px;
+    border: 3px solid #51a264;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: #40514E;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #51a264;
+}
+
+.container-bot {
+    background-color: #5b5656;
+    color: #f5eaea;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.container-bot a{
+    color: inherit;
+    font-weight: bold;
+}
