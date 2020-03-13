@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     color: #40514E;
 }
@@ -28,24 +30,42 @@ div.container-top >div p {
 }
 
 div.container-top >div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 div.container-top >div img.left-image {
+    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
 div.container-top >div img.right-image {
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
 .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     width: 100%;
     margin-top: 25px;
@@ -65,7 +85,7 @@ div.container-top >div img.right-image {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container-mid >div div.profile {
         padding: 0 20%;
     }
@@ -83,8 +103,8 @@ div.container-top >div img.right-image {
     margin-bottom: 35px;
 }
 
-@media (min-width: 768px) {
-    .container-mid >div h2 {
+@media only screen and (min-width: 768px) {
+    .container-mid >div >div:not(.profile) h2 {
         text-align: left;
     }
 }
@@ -96,20 +116,36 @@ div.container-top >div img.right-image {
 }
 
 .skills-info {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 70%;
     flex: 0 1 70%;
 }
 
 .skill-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 25px 0px 10px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .skill-row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 }
@@ -119,7 +155,7 @@ div.container-top >div img.right-image {
     max-width: 25%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .skill-row img {
         margin-bottom: 0px;
     }
@@ -131,6 +167,8 @@ div.container-top >div img.right-image {
     font-size: 2em;
     margin-top: 0px;
     margin-bottom: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
     flex: 0 1 100%;
 }
 
@@ -143,8 +181,11 @@ div.container-top >div img.right-image {
     font-size: 1.2em;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .skill-row.frontend {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse wrap;
         flex-flow: row-reverse wrap;
         text-align: right;
     }
@@ -155,7 +196,7 @@ div.container-top >div img.right-image {
     display: inline-block;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .skill-row.frontend ul {
         direction: rtl;
         text-align: right;
@@ -163,8 +204,15 @@ div.container-top >div img.right-image {
 }
 
 .contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -173,6 +221,8 @@ div.container-top >div img.right-image {
 }
 
 .btn {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     border-radius: 6px;
     background-color: #7fcd91;
